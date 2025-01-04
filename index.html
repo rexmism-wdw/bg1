@@ -121,7 +121,7 @@
 
         <ol>
           <li>Copy the bookmarklet code: <code class="bm-code"></code></li>
-          <li>If the bottom toolbar of Safari isn't already visible, tap at the bottom edge of the screen to bring it up.
+          <li>If the bottom toolbar of Safari isn't already visible, tap at the bottom edge of the screen to bring it up.</li>
           <li>Tap the share button (box with upward arrow) in the bottom toolbar, select Add to Favorites, and then save the bookmark.</li>
           <li>Tap in the address bar to bring up your Favorites and find the BG1 Bookmarklet favorite.</li>
           <li>Tap and hold on BG1 Bookmarklet and select Edit from the menu.</li>
@@ -143,31 +143,38 @@
     <details id="safari-userscript" class="instructions">
       <summary>Userscript Setup</summary>
       <div>
+        <p><b>Note:</b> These instructions are for iOS 18. Check to see if your phone needs to be updated before installing BG1.</p>
+
         <h3>Installing the Userscripts app</h3>
 
         <ol>
           <li>Install <a href="https://apps.apple.com/us/app/userscripts/id1463298887">Userscripts</a> from the App Store.</li>
-          <li>Open the Userscripts app, tap the <b>Set Userscripts Directory</b> button, and select a folder to store the script(s) you install. You can just create a new folder and select that.</li>
-          <li>In the <b>Settings</b> app, go to <b>Safari</b>, then <b>Extensions</b>, and finally <b>Userscripts</b>. Enable the Userscripts extension and set the permissions for <b>All Websites</b> to <b>Allow</b>.</li>
+          <li>Open the UserScripts app. You don't need to do anything in the app. It just needs to be opened once before the Safari extension will work.</li>
+          <li>Go into the <b>Settings</b> app, type <kbd>extensions</kbd> into the search box at the top, and tap on the first suggestion (or go to <b>Apps</b> → <b>Safari</b> → <b>Extensions</b>).</li>
+          <li>Under <b>Allow These Extensions</b>, tap on <b>Userscripts</b>.</li>
+          <li>Enable the <b>Allow Extension</b> setting, and under <b>Permissions</b>, set <b>Other Websites</b> to <b>Allow</b>.</li>
         </ol>
 
-        <h3>Installing the BG1 autoloader userscript</h3>
+        <h3>Installing the BG1 userscript</h3>
         <ol>
-          <li><a href="autoloader.user.js">Follow this link to open the BG1 autoloader userscript.</a></li>
-          <li>Tap the <b><span style="font-size: 85%">A</span>A</b> icon on the left side of the Safari address bar, and then tap <b>Userscripts</b> in the menu that opens.</li>
-          <li>The Userscripts extension should say <b>"Userscript detected. Tap to install."</b> Do that. (Note: If you just see a nonstop spinning circle, you may need to force close Safari and reopen it.)</li>
-          <li>The Userscripts extension will show you details about the script you're about to install. Scroll to the bottom and tap the <b>Install</b> button.</li>
+          <li>Close Safari (<a href="https://support.apple.com/en-us/109359" title="How to close an iPhone app">instructions</a>) and reopen it.</li>
+          <li>
+            <a href="autoloader.user.js" title="BG1 autoloader userscript" target="_blank">Follow this link</a> (opens in new tab) to open the BG1 autoloader userscript.
+          </li>
+          <li>Tap the <b>puzzle piece</b> icon on the left side of the address bar and then tap on <b>Userscripts</b> in the menu that pops up.</li>
+          <li>The Userscripts extension will detect the BG1 userscript. Tap the <b>"Tap to install"</b> link, then scroll to the bottom of the userscript details page and tap the <b>Install</b> button.</li>
         </ol>
 
         <h3>Bookmarking the BG1 Start page</h3>
         <ol>
           <li>Go to the <a href="start.html">BG1 Start</a> page.</li>
-          <li>Tap the <b>share button</b> (box with arrow pointing up) in the Safari toolbar and select <b>Add to Favorites</b>.</li>
+          <li>Tap the <b>share button</b> (box with upward-pointing arrow) in the Safari toolbar and select <b>Add to Favorites</b>.</li>
         </ol>
 
         <p>Now you're all set! To use BG1, just go to the <a href="start.html">BG1 Start</a> page and select the service you want to use.</p>
 
         <div class="buttons"><button class="done">Done</button></div>
+      </div>
     </details>
 
     <h2>Android Installation</h2>
@@ -206,20 +213,21 @@
     <details id="firefox" class="instructions">
       <summary>Userscript Setup (Firefox)</summary>
       <div>
-        <p><a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&hl=en_US&gl=US&pli=1">Firefox on Android</a> offers the easiest method for installing and running BG1. Even if you don't currently have Firefox installed on your phone, it may be worth doing so just for the added convenience when using BG1.</p>
+        <p>Firefox on Android (<a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&hl=en_US&gl=US&pli=1">download from Google Play Store</a>) offers the easiest method for running BG1. Even if you don't want to use it as your regular Web browser, it may be worth installing Firefox just for the added convenience when using BG1.</p>
 
         <h3>Adding the BG1 Start shortcut to the Firefox homepage</h3>
 
         <ol>
-          <li>Go to the <a href="start.html">BG1 Start</a> page in Firefox.</li>
+          <li>In Firefox, go to the <a href="start.html">BG1 Start</a> page.</li>
           <li>Tap the <b>three dots menu</b> in the toolbar and then tap <b>Add to shortcuts</b>.</li>
         </ol>
 
         <h3>Installing the BG1 autoloader userscript</h3>
 
         <ol>
-          <li>In Firefox, tap the <b>three dots menu</b> in the toolbar, then tap <b>Add-ons</b>, and then <b>Add-ons Manager</b>. In the recommended add-ons list, tap the <b>+ (plus)</b> next to <b>Tampermonkey</b> to install it.</li>
-          <li>Tap the button below to install the BG1 autoloader userscript in Tampermonkey. Tampermonkey will display information about the script and ask for confirmation that you wish to install it.</li>
+          <li>In Firefox, tap the <b>three dots menu</b> in the toolbar, then tap <b>Extensions</b>, and then <b>Extensions Manager</b>.</li>
+          <li>Find <b>Tampermonkey</b> in the <b>Recommended</b> list and tap the <b>+ (plus sign)</b> to install it.</li>
+          <li>Tap the <b>Install BG1 Autoloader</b> button below to install the userscript in Tampermonkey. Tampermonkey will display information about the script and ask for confirmation that you wish to install it.</li>
         </ol>
 
         <div class="buttons"><a href="autoloader.user.js">Install BG1 Autoloader</a></div>
@@ -238,9 +246,10 @@
         <p>As I mentioned in the instructions above, tapping a button on the <a href="start.html">BG1 Start</a> page doesn't load BG1 on its own. It just takes you to the page you need to be on for the bookmarklet to work. The BG1 interface will only appear after you've run the bookmarklet on the "code" page.</p>
         <p>If it still isn't working, here are some other troubleshooting tips:</p>
         <ul>
-          <li>Make sure you're carefully following the instructions for the specific phone/browser combination you're using. Watch (or rewatch) the YouTube video linked at the top of the instructions page for your browser.</li>
+          <li>Make sure you're carefully following the instructions for the specific phone/browser combination you're using.</li>
           <li>Try a different connection. Switch to mobile data if you're currently using Wi-Fi, or vice versa.</li>
           <li>If using a VPN, try disabling it.</li>
+          <li>If it isn't working in a private browser tab, try running it in a normal tab.</li>
           <li>Go into your Web browser's settings and delete the browsing data/cookies. This option is usually listed under the Privacy/Security category.</li>
         </ul>
       </dd>
@@ -253,7 +262,6 @@
         <p>To be able to make the authenticated requests required to communicate with Disney's servers, BG1 needs an access token obtained by signing into your Disney account. This access token, which is only valid for a 24 hour period, is stored locally on your device along with its expiration date and an ID used by the Lightning Lane API. No other Disney account-related data is stored, and none of it is ever transmitted to any non-Disney server.</p>
         <p>Although BG1 cannot see your password, you may choose to log in using a confirmation code that is texted/emailed to you by tapping the "Need help signing in?" link on the login page.</p>
         <p>You'll receive an automated email from Disney every time you sign in, just like when you log into the Disney app or website on a new device.</p>
-      </dd>
       </dd>
     </dl>
   </main>

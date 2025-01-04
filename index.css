@@ -109,6 +109,14 @@ code {
   background: #e8e8e8;
 }
 
+kbd::before {
+  content: '"';
+}
+
+kbd::after {
+  content: '"';
+}
+
 b,
 kbd {
   font-family: inherit;

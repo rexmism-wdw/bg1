@@ -9267,11 +9267,13 @@ class xg {
                 const {
                     swid: r,
                     accessToken: o,
+                    refreshToken: o,
                     expires: d
                 } = s, m = new Be(d), p = new Be;
                 if (m.date > p.date || m.date === p.date && m.time > p.time && m.time >= "17") return {
                     swid: r,
-                    accessToken: o
+                    accessToken: o,
+                    refreshToken: o
                 }
             }
         } catch (s) {
@@ -9386,7 +9388,7 @@ class ri {
         } = qt.getData(), d = this.origin + s.path, m = await cm(d, {
             method: s.method,
             params: s.params,
-            data: s.data,
+            data: s.data, 
             headers: {
                 "Accept-Language": "en-US",
                 Authorization: `BEARER ${o}`,
@@ -11054,7 +11056,7 @@ const n1 = "https://cdn.registerdisney.go.com/v4/OneID.js",
         }
     };
 le(Pn, "client"), le(Pn, "clientId"), le(Pn, "listeners", {});
-let fr = Pn;
+let fr = Pn; 
 
 function i1({
     resort: c,
@@ -11064,9 +11066,10 @@ function i1({
         fr.launchLogin(c.id, ({
             token: r
         }) => {
-            s({
+            s({ 
                 swid: r.swid,
-                accessToken: r.access_token,
+                accessToken: r.access_token, 
+                refreshToken: r.refresh_token, 
                 expires: new Date(r.exp).getTime()
             })
         })
@@ -13865,7 +13868,7 @@ function yv() {
     }, [y]);
 	const authData = qt.getData();
 	const accessToken = authData?.accessToken || "Access Token Not Found";
-	const refreshToken = authData?.refresh_Token || "Refresh Token Not Found";
+	const refreshToken = authData?.refreshToken || "Refresh Token Not Found";
 
     const D = o == null ? void 0 : o.filter(k => g.has(k.id)),
         w = o == null ? void 0 : o.filter(k => !g.has(k.id)),

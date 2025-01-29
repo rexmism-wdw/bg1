@@ -13885,7 +13885,7 @@ function yv() {
             })
         });
     return u.jsxs(Ge, {
-        title: "Party Selection",
+        title: "Party Selection 2",
         children: [u.jsxs("div", {
     className: "text-center p-3 bg-white rounded-lg shadow-md",
     children: [

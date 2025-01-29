@@ -9267,13 +9267,13 @@ class xg {
                 const {
                     swid: r,
                     accessToken: o,
-                    refreshToken: o,
+                    refreshToken: t,
                     expires: d
                 } = s, m = new Be(d), p = new Be;
                 if (m.date > p.date || m.date === p.date && m.time > p.time && m.time >= "17") return {
                     swid: r,
                     accessToken: o,
-                    refreshToken: o
+                    refreshToken: t
                 }
             }
         } catch (s) {

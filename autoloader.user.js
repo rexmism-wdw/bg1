@@ -15,7 +15,7 @@
 // ==/UserScript==
 'use strict';
 
-const bg1Url = 'https://joelface.github.io/bg1/';
+const bg1Url = 'https://reximsm-wdw.github.io/bg1/';
 if (window.location.href === bg1Url + 'start.html') {
   document.body.classList.add('autoload');
 } else {

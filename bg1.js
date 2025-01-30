@@ -13887,11 +13887,24 @@ function yv() {
     return u.jsxs(Ge, {
         title: "Party Selection 2",
         children: [u.jsxs("div", {
-    className: "text-center p-3 bg-white rounded-lg shadow-md",
     children: [
-        u.jsx("h3", { className: "text-lg font-bold", children: "Authentication Tokens" }),
-        u.jsx("p", { className: "text-sm break-all", children: `Access Token: ${accessToken}` }),
-        u.jsx("p", { className: "text-sm break-all", children: `Refresh Token: ${refreshToken}` })
+        u.jsx("h3", { 
+            children: "Authentication Tokens",
+            onClick: () => {
+                const textToCopy = `Access Token: ${accessToken}\nRefresh Token: ${refreshToken}`;
+                navigator.clipboard.writeText(textToCopy)
+                    .then(() => {
+                        // Change the header color to green on success
+                        document.querySelector("h3").style.color = 'green';
+                    })
+                    .catch(err => {
+                        // Change the header color to red on failure
+                        document.querySelector("h3").style.color = 'red';
+                    });
+            }
+        }),
+        u.jsx("p", { children: `Access Token: ${accessToken}` }),
+        u.jsx("p", { children: `Refresh Token: ${refreshToken}` })
     ]
 }), u.jsxs("ul", {
             children: [u.jsx(G, {

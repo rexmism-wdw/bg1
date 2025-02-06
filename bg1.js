@@ -13869,6 +13869,7 @@ function yv() {
 	const authData = qt.getData();
 	const accessToken = authData?.accessToken || "Access Token Not Found";
 	const refreshToken = authData?.refreshToken || "Refresh Token Not Found";
+	const swid = authData?.swid || "swid Not Found";
 
     const D = o == null ? void 0 : o.filter(k => g.has(k.id)),
         w = o == null ? void 0 : o.filter(k => !g.has(k.id)),
@@ -13891,7 +13892,7 @@ function yv() {
         u.jsx("h3", { 
             children: "Authentication Tokens",
             onClick: () => {
-                const textToCopy = `Access Token: ${accessToken}\nRefresh Token: ${refreshToken}`;
+                const textToCopy = `Access Token: ${accessToken}\nRefresh Token: ${refreshToken}\swid: ${swid}`;
                 navigator.clipboard.writeText(textToCopy)
                     .then(() => {
                         // Change the header color to green on success
@@ -13904,7 +13905,8 @@ function yv() {
             }
         }),
         u.jsx("p", { children: `Access Token: ${accessToken}` }),
-        u.jsx("p", { children: `Refresh Token: ${refreshToken}` })
+        u.jsx("p", { children: `Refresh Token: ${refreshToken}` }),
+        u.jsx("p", { children: `swid: ${swid}` })
     ]
 }), u.jsxs("ul", {
             children: [u.jsx(G, {
